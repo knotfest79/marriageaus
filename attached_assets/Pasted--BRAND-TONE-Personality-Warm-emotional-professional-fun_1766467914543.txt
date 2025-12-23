@@ -1,0 +1,145 @@
+🔹 BRAND & TONE
+* Personality: Warm & emotional, professional, fun, relaxed
+* Tone of voice:
+    * Compassionate and inclusive
+    * Calm, reassuring, and trustworthy
+    * Simple language (no legal jargon overload)
+    * Friendly but authoritative
+* Avoid salesy language — focus on service, dignity, equality, and trust
+
+🔹 BRAND STORY (IMPORTANT CONTEXT)
+The Marriage Celebrant is:
+* An Authorised Civil Marriage Celebrant (Australia)
+* A qualified lawyer
+* Actively involved in Justice of the Peace (JP) legal services
+* Provides legal and community services at the Magistrates Court, Brisbane
+* Offers marriage services Australia-wide, including remote and interstate travel
+* Charges only a nominal fee for marriage ceremonies as a social and community service
+* Strong advocate for marriage equality, inclusiveness, and access to justice
+This must be clearly communicated as a public-service-oriented, ethical, and inclusive practice, not a commercial wedding brand.
+
+🔹 TARGET AUDIENCE
+* All couples (inclusive of:
+    * Same-sex couples
+    * Multicultural couples
+    * Second marriages
+    * Registry-style and simple legal marriages
+    * Couples seeking low-cost or socially supported ceremonies)
+
+🔹 SERVICES OFFERED
+Clearly present these services:
+* Wedding Ceremonies
+* Elopements
+* Registry-Style Weddings
+* Vow Renewals
+* Commitment Ceremonies
+* Legals-Only / Marriage Paperwork
+* MC (Master of Ceremonies) Services
+Explain that services are offered Australia-wide, including regional and remote locations.
+
+🔹 VISUAL DESIGN
+* Primary color options:
+    * Navy Blue (authority, trust, law)
+    * Bright Red (justice, equality, strength)
+* Neutral backgrounds: white / off-white
+* Clean, accessible, government-friendly layout
+* No flashy wedding clichés
+* Minimal, respectful imagery
+* Strong typography (professional + human)
+
+🔹 TRUST & AUTHORITY ELEMENTS (MUST INCLUDE)
+* Registered Australian Marriage Celebrant badge
+* Lawyer credentials
+* Justice of the Peace involvement
+* Magistrates Court community service mention
+* Testimonials / reviews section
+* Years of service
+* Photos with couples (respectful, documentary style)
+* Optional Google Reviews integration
+
+🔹 REQUIRED PAGES & CONTENT STRUCTURE
+1️⃣ Home
+* Clear headline: Australia-wide Civil Marriage Celebrant
+* Short mission statement (community service & equality)
+* Services overview
+* Trust badges
+* Call-to-action buttons
+
+2️⃣ Who We Are
+* Background of the celebrant
+* Legal qualifications
+* Community service values
+* Human, personal tone
+
+3️⃣ Marriage Requirements (Australia)
+* Legal marriage requirements explained simply
+* Documents needed
+* NOIM overview
+* Timelines
+
+4️⃣ Marriage Equality in Australia
+* Legal recognition of same-sex marriage
+* Inclusiveness statement
+* Equality and dignity message
+* Educational, respectful tone
+
+5️⃣ Intended Pair – Online Enquiry
+* Online enquiry form
+* Secure and simple
+* Fields for couple details, location, ceremony type
+
+6️⃣ Our Offices in Australia
+* Brisbane (primary)
+* Service coverage map or list
+* Explanation of travel and remote service availability
+
+7️⃣ Our Gallery
+* Ceremony moments
+* Community service images
+* Court/legal service imagery (where appropriate)
+
+8️⃣ Our Promise
+* Ethical service
+* Fair pricing
+* Inclusivity
+* Confidentiality
+* Legal accuracy
+
+9️⃣ Guangdong Wonder Law Firm
+* Dedicated page showcasing:
+    * Legal association
+    * Professional credibility
+    * International legal background (if applicable)
+* Must look professional and separate from celebrant branding
+
+🔟 Marriage Form
+* Official-style marriage form
+* Clean layout
+* Accessibility-focused
+* Secure submission guidance
+
+🔹 CALL-TO-ACTIONS (USE THROUGHOUT)
+* “Check Availability”
+* “Book a Call”
+* “Enquire Now”
+Buttons should feel supportive, not sales-driven.
+
+🔹 WORDPRESS REQUIREMENTS
+* Mobile-first design
+* SEO-ready for Australia-wide searches
+* Accessibility compliant
+* Fast loading
+* Clean WordPress theme structure
+* Easy admin editing
+* Form handling ready (no plugins required unless necessary)
+
+🔹 FINAL OUTPUT EXPECTATION
+Generate:
+* Full website structure
+* Page-by-page content
+* Navigation menu
+* Section layouts
+* CTA placements
+* Design guidance
+* WordPress-ready implementation plan
+The final website must feel like: “A trusted legal professional offering marriage services as a service to society, not a commercial wedding business.”
