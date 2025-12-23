@@ -18,6 +18,9 @@ export interface IStorage {
 
 export class DatabaseStorage implements IStorage {
   async createEnquiry(insertEnquiry: InsertEnquiry): Promise<Enquiry> {
+    if (!db) {
+      throw new Error("Database not configured");
+    }
     const [enquiry] = await db
       .insert(enquiries)
       .values(insertEnquiry)
@@ -26,10 +29,16 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getEnquiries(): Promise<Enquiry[]> {
+    if (!db) {
+      throw new Error("Database not configured");
+    }
     return await db.select().from(enquiries);
   }
 
   async createNoimSubmission(insertSubmission: InsertNoimSubmission): Promise<NoimSubmission> {
+    if (!db) {
+      throw new Error("Database not configured");
+    }
     const [submission] = await db
       .insert(noimSubmissions)
       .values(insertSubmission)
@@ -38,8 +47,48 @@ export class DatabaseStorage implements IStorage {
   }
 
   async getNoimSubmissions(): Promise<NoimSubmission[]> {
+    if (!db) {
+      throw new Error("Database not configured");
+    }
     return await db.select().from(noimSubmissions);
   }
 }
 
-export const storage = new DatabaseStorage();
+class MemoryStorage implements IStorage {
+  private enquiriesStore: Enquiry[] = [];
+  private noimStore: NoimSubmission[] = [];
+  private enquiryId = 1;
+  private noimId = 1;
+
+  async createEnquiry(insertEnquiry: InsertEnquiry): Promise<Enquiry> {
+    const enquiry: Enquiry = {
+      id: this.enquiryId++,
+      createdAt: new Date(),
+      ...insertEnquiry,
+    };
+    this.enquiriesStore.push(enquiry);
+    return enquiry;
+  }
+
+  async getEnquiries(): Promise<Enquiry[]> {
+    return [...this.enquiriesStore];
+  }
+
+  async createNoimSubmission(
+    insertSubmission: InsertNoimSubmission
+  ): Promise<NoimSubmission> {
+    const submission: NoimSubmission = {
+      id: this.noimId++,
+      createdAt: new Date(),
+      ...insertSubmission,
+    };
+    this.noimStore.push(submission);
+    return submission;
+  }
+
+  async getNoimSubmissions(): Promise<NoimSubmission[]> {
+    return [...this.noimStore];
+  }
+}
+
+export const storage: IStorage = db ? new DatabaseStorage() : new MemoryStorage();
