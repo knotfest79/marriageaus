@@ -2,6 +2,10 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { SectionHeader } from "@/components/SectionHeader";
 import { ArrowRight, CheckCircle2, Gavel, HeartHandshake, Scale } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import couple1 from "@assets/stock_images/happy_diverse_couple_ccf02584.jpg";
+import couple2 from "@assets/stock_images/happy_diverse_couple_ef77461c.jpg";
+import couple3 from "@assets/stock_images/happy_diverse_couple_6a358c84.jpg";
 
 export default function Home() {
   return (
@@ -45,19 +49,33 @@ export default function Home() {
           </div>
           
           <div className="relative hidden lg:block animate-in fade-in duration-1000 delay-300">
-            {/* Scenic Australian Landscape Placeholder */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 aspect-[4/5]">
-               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
-               <img 
-                 src="https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=800&q=80" 
-                 alt="Couple celebrating marriage in nature" 
-                 className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-700"
-               />
-               <div className="absolute bottom-8 left-8 z-20 text-white">
-                 <p className="font-display text-2xl font-bold">Celebrating Love</p>
-                 <p className="text-sm opacity-80">Across Australia</p>
-               </div>
-            </div>
+            {/* Marriage Moments Carousel */}
+            <Carousel className="w-full">
+              <CarouselContent>
+                {[
+                  { img: couple1, caption: "Celebrating Love" },
+                  { img: couple2, caption: "Inclusive & Equal" },
+                  { img: couple3, caption: "Your Special Day" }
+                ].map((item, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 aspect-[4/5]">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10" />
+                      <img 
+                        src={item.img} 
+                        alt={item.caption}
+                        className="object-cover w-full h-full"
+                      />
+                      <div className="absolute bottom-8 left-8 z-20 text-white">
+                        <p className="font-display text-2xl font-bold">{item.caption}</p>
+                        <p className="text-sm opacity-80">Across Australia</p>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="absolute -left-16 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 border-white/30 text-white" />
+              <CarouselNext className="absolute -right-16 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 border-white/30 text-white" />
+            </Carousel>
           </div>
         </div>
       </section>
